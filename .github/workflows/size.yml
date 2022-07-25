@@ -8,8 +8,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install PNPM
-        uses: npm i -g pnpm
+      - name: Set up PNPM
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7.5.2
 
       - uses: andresz1/size-limit-action@v1
         with:
