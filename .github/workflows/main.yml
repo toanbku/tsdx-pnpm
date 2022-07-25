@@ -24,14 +24,14 @@ jobs:
         with:
           version: 7.5.2
 
-      - name: Install packages
-        uses: pnpm install
+      - name: Pnpm install
+        run: pnpm install
 
       - name: Lint
         run: pnpm lint
 
       - name: Test
-        run: pnpm test --ci --coverage --maxWorkers=2
+        run: pnpm test:ci
 
       - name: Build
         run: pnpm build
