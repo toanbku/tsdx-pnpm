@@ -44,9 +44,9 @@ npm start # or yarn start
 
 The default example imports and live reloads whatever is in `/dist`, so if you are seeing an out of date component, make sure TSDX is running in watch mode like we recommend above. **No symlinking required**, we use [Parcel's aliasing](https://parceljs.org/module_resolution.html#aliases).
 
-To do a one-off build, use `npm run build` or `yarn build`.
+To do a one-off build, use `pnpm build`.
 
-To run tests, use `npm test` or `yarn test`.
+To run tests, use `pnpm test`.
 
 ## Configuration
 
@@ -54,11 +54,11 @@ Code quality is set up for you with `prettier`, `husky`, and `lint-staged`. Adju
 
 ### Jest
 
-Jest tests are set up to run with `npm test` or `yarn test`.
+Jest tests are set up to run with `pnpm test`.
 
 ### Bundle analysis
 
-Calculates the real cost of your library using [size-limit](https://github.com/ai/size-limit) with `npm run size` and visulize it with `npm run analyze`.
+Calculates the real cost of your library using [size-limit](https://github.com/ai/size-limit) with `pnpm size` and visulize it with `pnpm analyze`.
 
 #### Setup Files
 
