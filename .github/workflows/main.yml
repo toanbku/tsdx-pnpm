@@ -24,9 +24,6 @@ jobs:
         with:
           version: 7.5.2
 
-      - name: Install packages
-        uses: pnpm install
-
       - name: Lint
         run: pnpm lint
 
